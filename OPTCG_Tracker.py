@@ -49,7 +49,8 @@ class Scraper():
     
     
     def cardList_Scraper(self):
-fi        URL = 'https://www.cardmarket.com/en/OnePiece/Products/Singles/{}/{}'
+        driver = webdriver.Firefox(service=service, options=options)
+        URL = 'https://www.cardmarket.com/en/OnePiece/Products/Singles/{}/{}'
         errorCount = 0
         
         for KEY, VALS in self.cardInfo.items():
